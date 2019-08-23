@@ -3,6 +3,8 @@ import { BlogContext } from "../context/BlogContext";
 
 const Blogs = () => {
   const value = useContext(BlogContext);
+  //to make is work with reducer just user this
+  // const blogs = value.blogs.map(blog => (
   const blogs = value.blogs.map(blog => (
     <div key={blog.title}>
       <div>{blog.title}</div>
