@@ -4,7 +4,7 @@ import { BlogContext } from "../context/BlogContext";
 const Blogs = () => {
   const value = useContext(BlogContext);
   const blogs = value.blogs.map(blog => (
-    <div>
+    <div key={blog.title}>
       <div>{blog.title}</div>
     </div>
   ));
